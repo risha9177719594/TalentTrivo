@@ -1,0 +1,118 @@
+.journey-wrapper {
+  background: linear-gradient(180deg, #ffffff 0%, var(--color-surface) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.journey-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow-x: auto;
+  padding: 1.5rem 0.5rem;
+  gap: 0.75rem;
+}
+
+.journey-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px;
+  max-width: 140px;
+  position: relative;
+  z-index: 2;
+}
+
+.journey-node-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-border);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.journey-node:hover .journey-node-icon {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(99, 49, 129, 0.15);
+}
+
+.journey-node.highlight .journey-node-icon {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+.journey-node.terminal .journey-node-icon {
+  background-color: var(--color-tertiary-light);
+  border-color: var(--color-tertiary);
+  color: var(--color-tertiary-dark);
+}
+
+.journey-node-title {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+}
+
+.journey-node-sub {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
+.journey-connector {
+  color: var(--color-disabled);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: -1.75rem;
+}
+
+@media (max-width: 992px) {
+  .journey-flow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    overflow-x: visible;
+  }
+  .journey-node {
+    max-width: 100%;
+    min-width: unset;
+    flex-direction: row;
+    text-align: left;
+    gap: 1rem;
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+  }
+  .journey-node-icon {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .journey-connector {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .journey-flow {
+    grid-template-columns: 1fr;
+  }
+}

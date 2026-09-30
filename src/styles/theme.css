@@ -1,0 +1,36 @@
+:root {
+  /* Brand */
+  --color-primary: #633181;
+  --color-primary-dark: #4a2364;
+  --color-primary-light: #ede4f3;
+
+  --color-secondary: #254178;
+  --color-secondary-dark: #1b315c;
+  --color-secondary-light: #e8eef8;
+
+  --color-tertiary: #4bae4f;
+  --color-tertiary-dark: #347c38;
+  --color-tertiary-light: #e8f5e9;
+
+  /* Neutral */
+  --color-white: #ffffff;
+  --color-background: #f7f8fa;
+  --color-surface: #f4f6f9;
+  --color-border: #e2e5ea;
+
+  --color-text-primary: #17151a;
+  --color-text-secondary: #55515b;
+  --color-text-muted: #7b7780;
+  --color-disabled: #a8a5ab;
+
+  /* Semantic */
+  --color-success: #4bae4f;
+  --color-warning: #8a5a00;
+  --color-danger: #c62828;
+  --color-info: #254178;
+
+  /* Typography */
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
