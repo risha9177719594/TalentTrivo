@@ -48,7 +48,7 @@
 
 .form-control.is-invalid {
   border-color: var(--color-danger);
-  background-color: #fff8f8;
+  background-color: var(--color-danger-bg);
 }
 
 .form-control.is-invalid:focus {

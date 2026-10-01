@@ -148,6 +148,18 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialTargetTech = '', onSu
         </div>
       )}
 
+      {/* Anti-spam honeypot field (hidden from genuine users) */}
+      <div style={{ display: 'none' }} aria-hidden="true">
+        <label htmlFor="hpWebsite">Leave this field blank</label>
+        <input
+          type="text"
+          id="hpWebsite"
+          name="hpWebsite"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="fullName" className="form-label">
@@ -161,6 +173,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialTargetTech = '', onSu
             placeholder="e.g. John Doe"
             value={formData.fullName}
             onChange={handleChange}
+            aria-required="true"
             aria-invalid={!!errors.fullName}
             aria-describedby={errors.fullName ? 'fullName-error' : undefined}
           />
@@ -183,6 +196,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialTargetTech = '', onSu
             placeholder="e.g. john@example.com"
             value={formData.email}
             onChange={handleChange}
+            aria-required="true"
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? 'email-error' : undefined}
           />
@@ -207,6 +221,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialTargetTech = '', onSu
             placeholder="e.g. +91 98765 43210"
             value={formData.phone}
             onChange={handleChange}
+            aria-required="true"
             aria-invalid={!!errors.phone}
             aria-describedby={errors.phone ? 'phone-error' : undefined}
           />
@@ -227,6 +242,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialTargetTech = '', onSu
             className={`form-control ${errors.yearsOfExperience ? 'is-invalid' : ''}`}
             value={formData.yearsOfExperience}
             onChange={handleChange}
+            aria-required="true"
             aria-invalid={!!errors.yearsOfExperience}
             aria-describedby={errors.yearsOfExperience ? 'years-error' : undefined}
           >
@@ -258,6 +274,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialTargetTech = '', onSu
             placeholder="e.g. Java Monoliths, Salesforce, QA/Testing"
             value={formData.currentTechnology}
             onChange={handleChange}
+            aria-required="true"
             aria-invalid={!!errors.currentTechnology}
             aria-describedby={errors.currentTechnology ? 'currentTech-error' : undefined}
           />
@@ -278,6 +295,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialTargetTech = '', onSu
             className={`form-control ${errors.targetTechnology ? 'is-invalid' : ''}`}
             value={formData.targetTechnology}
             onChange={handleChange}
+            aria-required="true"
             aria-invalid={!!errors.targetTechnology}
             aria-describedby={errors.targetTechnology ? 'targetTech-error' : undefined}
           >

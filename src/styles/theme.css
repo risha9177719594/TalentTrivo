@@ -27,7 +27,17 @@
   --color-success: #4bae4f;
   --color-warning: #8a5a00;
   --color-danger: #c62828;
+  --color-danger-bg: #fff8f8;
   --color-info: #254178;
+
+  /* Dark Surface & Footer Tokens */
+  --color-surface-dark: #120f17;
+  --color-surface-dark-card: #191622;
+  --color-text-dark-primary: #ede4f3;
+  --color-text-dark-secondary: #c7c5cc;
+  --color-text-dark-muted: #9c98a3;
+  --color-text-dark-subtle: #7b7780;
+  --color-border-dark: rgba(255, 255, 255, 0.08);
 
   /* Typography */
   --font-heading: "Manrope", sans-serif;

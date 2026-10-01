@@ -1,8 +1,8 @@
 .footer {
-  background-color: #120f17;
-  color: #c7c5cc;
+  background-color: var(--color-surface-dark);
+  color: var(--color-text-dark-secondary);
   padding: 4.5rem 0 2rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--color-border-dark);
 }
 
 .footer-top {
@@ -13,7 +13,7 @@
 }
 
 .footer-brand p {
-  color: #9c98a3;
+  color: var(--color-text-dark-muted);
   margin-top: 1.25rem;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
@@ -36,7 +36,7 @@
 }
 
 .footer-links a {
-  color: #9c98a3;
+  color: var(--color-text-dark-muted);
   font-size: 0.925rem;
   transition: color 0.15s ease;
 }
@@ -49,14 +49,14 @@
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  color: #9c98a3;
+  color: var(--color-text-dark-muted);
   font-size: 0.925rem;
   margin-bottom: 0.85rem;
 }
 
 .footer-bottom {
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--color-border-dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,16 +65,16 @@
 }
 
 .footer-bottom p {
-  color: #7b7780;
+  color: var(--color-text-dark-subtle);
   font-size: 0.85rem;
 }
 
 .footer-disclaimer {
-  color: #7b7780;
+  color: var(--color-text-dark-subtle);
   font-size: 0.8rem;
   margin-top: 1rem;
   line-height: 1.5;
-  border-top: 1px dashed rgba(255, 255, 255, 0.06);
+  border-top: 1px dashed var(--color-border-dark);
   padding-top: 1rem;
 }
 

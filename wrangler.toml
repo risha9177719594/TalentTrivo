@@ -1,0 +1,14 @@
+name = "talenttrivo"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "dist"
+
+# Cloudflare D1 Database Binding (Application System of Record)
+[[d1_databases]]
+binding = "DB"
+database_name = "talenttrivo-db"
+database_id = "talenttrivo-db"
+
+# Cloudflare R2 Bucket Binding (Protected Resumes & Documents)
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "talenttrivo-documents"

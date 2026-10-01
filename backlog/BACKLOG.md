@@ -21,12 +21,15 @@ Goal:
 # Completed
 
 * [x] TT-001 — Project foundation — Initialized React 18 + TypeScript + Vite architecture, centralized design system tokens (`src/styles/theme.css`), brand assets, responsive multi-page public website, accessible navigation, and SEO foundation.
+* [x] TT-002 — Application configuration — Created `.env.example`, `.env`, `src/config/env.ts`, `src/vite-env.d.ts`, and unified base URL and environment variable strategy.
+* [x] TT-003 — Database foundation — Established database repository abstraction (`LeadRepository`), dual-runtime support (`LocalLeadRepository` with SQLite for local development, `CloudflareD1LeadRepository` for Cloudflare D1 in production), schema definitions (`database/schema.sql`), auto-migration runner, and `0001_create_leads.sql` for the core `leads` table.
+* [x] TT-006 — Lead capture — Implemented real `POST /api/leads` endpoint with server-side validation, anti-spam honeypot, IP rate limiting, server-generated reference codes (`LEAD-XXXXXX`), database persistence, updated `leadService.ts` calling API and removing `localStorage`, and accessible form handling.
 
 ---
 
 # In Progress
 
-* [ ] TT-002 — Application configuration
+* [ ] TT-003-D1 — Cloudflare D1 production binding & schema execution (Provision D1 database in Cloudflare dashboard, execute 0001_create_leads.sql, and attach 'DB' binding in Cloudflare Pages settings)
 
 ---
 
@@ -35,14 +38,15 @@ Goal:
 ## Foundation
 
 * [x] TT-001 — Project foundation
-* [ ] TT-002 — Application configuration
-* [ ] TT-003 — Database foundation
+* [x] TT-002 — Application configuration
+* [x] TT-003 — Database foundation
+* [ ] TT-003-D1 — Cloudflare D1 production binding & schema execution
 * [ ] TT-004 — Authentication
 * [ ] TT-005 — Role-based authorization
 
 ## Lead Management
 
-* [ ] TT-006 — Lead capture (Public UI and client service boundary implemented; backend API integration pending)
+* [x] TT-006 — Lead capture
 * [ ] TT-007 — Lead list
 * [ ] TT-008 — Lead detail
 * [ ] TT-009 — Lead qualification

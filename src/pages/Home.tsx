@@ -196,16 +196,16 @@ export const Home: React.FC = () => {
       </section>
 
       {/* AI-Powered Career Intelligence */}
-      <section className="section" style={{ backgroundColor: '#131118', color: 'var(--color-white)' }} aria-labelledby="ai-heading">
+      <section className="section" style={{ backgroundColor: 'var(--color-surface-dark)', color: 'var(--color-white)' }} aria-labelledby="ai-heading">
         <div className="container">
           <div className="section-header">
-            <span className="badge" style={{ backgroundColor: 'rgba(99, 49, 129, 0.4)', color: '#ede4f3', borderColor: 'rgba(99, 49, 129, 0.6)' }}>
+            <span className="badge" style={{ backgroundColor: 'rgba(99, 49, 129, 0.4)', color: 'var(--color-text-dark-primary)', borderColor: 'rgba(99, 49, 129, 0.6)' }}>
               Next-Gen Tooling
             </span>
             <h2 id="ai-heading" style={{ color: 'var(--color-white)' }}>
               AI-Powered Career Intelligence
             </h2>
-            <p style={{ color: '#a8a5ab' }}>
+            <p style={{ color: 'var(--color-text-dark-muted)' }}>
               We harness purpose-built AI to analyze, classify, and synthesize career transitions with high precision—always reviewed by human counselors.
             </p>
           </div>
@@ -218,7 +218,7 @@ export const Home: React.FC = () => {
                   key={cap.title}
                   style={{
                     backgroundColor: 'rgba(255, 255, 255, 0.04)',
-                    border: '1px solid rgba(255, 255, 255, 0.1)',
+                    border: '1px solid var(--color-border-dark)',
                     borderRadius: '16px',
                     padding: '2rem',
                     display: 'flex',
@@ -232,7 +232,7 @@ export const Home: React.FC = () => {
                       height: '44px',
                       borderRadius: '10px',
                       backgroundColor: 'rgba(99, 49, 129, 0.3)',
-                      color: '#ede4f3',
+                      color: 'var(--color-text-dark-primary)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -247,12 +247,12 @@ export const Home: React.FC = () => {
                   <div style={{ color: 'var(--color-tertiary)', fontSize: '0.825rem', fontFamily: 'var(--font-mono)', marginBottom: '0.85rem' }}>
                     {cap.tagline}
                   </div>
-                  <p style={{ color: '#b9b6be', fontSize: '0.925rem', lineHeight: 1.5, marginBottom: '1.25rem' }}>
+                  <p style={{ color: 'var(--color-text-dark-secondary)', fontSize: '0.925rem', lineHeight: 1.5, marginBottom: '1.25rem' }}>
                     {cap.description}
                   </p>
-                  <div style={{ marginTop: 'auto', borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '0.85rem' }}>
+                  <div style={{ marginTop: 'auto', borderTop: '1px solid var(--color-border-dark)', paddingTop: '0.85rem' }}>
                     {cap.highlights.map((h) => (
-                      <div key={h} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#9c98a3', fontSize: '0.8rem', marginBottom: '0.35rem' }}>
+                      <div key={h} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--color-text-dark-muted)', fontSize: '0.8rem', marginBottom: '0.35rem' }}>
                         <Zap size={12} color="var(--color-primary-light)" />
                         <span>{h}</span>
                       </div>
